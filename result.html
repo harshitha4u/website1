@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entertainment</title>
+    <style>
+        footer{background-color :brown;height:50px;}
+        header{background-color:grey;height:200px;}
+        nav ul li{display:inline;margin:15px;}
+    </style>
+    <script>
+        function jfun2(){
+            var m=parseInt(frm2.t1.value);
+            var e=parseInt(frm2.t2.value);
+            var c=parseInt(frm2.t3.value);
+            var tmarks=m+e+c;
+            frm2.t4.value=tmarks;
+            var pmarks=tmarks/3;
+            frm2.t5.value=pmarks;
+            var max;
+            if(m>e && m>c){
+                max=m;
+            }
+            else if(e>m && e>c){
+                max=e;
+            }
+            else{
+                max=c;
+            }
+            frm2.t6.value=max;
+        }
+
+            </script>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+</body>
+<body>
+    <header style="background-image:url(./images/7.jpg);">
+
+    </header>
+        <nav>
+             <ul>
+              <li><a href="home.html"> home</a></li>
+              <li><a href="courses.html"> courses</a></li>
+              <li><a href="gallery.html"> gallery</a></li>
+              <li><a href="contact.html"> contact</a></li>
+              <li><a href="registration.html"> Registration</a></li>
+              <li><a href="result.html"> Result</a></li>
+             </ul>
+        </nav>
+        <section>
+        </section>
+            <div style="background-color:aliceblue;border-radius:60px;width:100%">
+                <h2>Student Marks</h2>
+                <form name="frm2">
+                    <pre>
+                        Name <input type="text" placeholder="Your name here"><br>
+                        Marks:
+                        Maths<input type="text" name="t1" placeholder="Your maths marks here"> English<input type="text" name="t2" placeholder="Your english marks here"> Computer<input type="text" name="t3" placeholder="Your computer marks here"><br>
+                        Result:
+                        Total Marks<input type="text" name="t4"> % Marks<input type="text" name="t5"> Max Marks<input type="text" name="t6">
+                        <input type="Button" value="Result" onclick="jfun2()">
+                    </pre>     
+                </form>
+            </div>
+        <div style="height:300px">
+        </div>
+        <footer style="background-color:aliceblue">
+            This website is develpoed by:Keerthana.A
+        </footer>
+    
+</body>
+</html>
